@@ -34,8 +34,11 @@ namespace Assignment_03_03
             MessageBox.Show("New customer has been added!");
 
             this.Hide();
-            Home home = new Home();
-            home.Show();
+
+            Home.GetHome().LoadCustomers();
+            Home.GetHome().Show();
+            //home.Show();
+           
         }
     }
 }
